@@ -1,43 +1,60 @@
 # Personal Portfolio Website
 
-A personal portfolio built with pure **HTML5** and **CSS3** — no framework, no JavaScript library. Made for the Web Programming course, E-learning 01 assignment.
+A personal portfolio website built with pure **HTML5** and **CSS3**, without using any CSS framework or JavaScript library. This project was created for the Web Programming course – E-learning 01 assignment.
 
 ## Structure
 
-```
-portfolio/
+```text
+main/
 ├── index.html          → Homepage (client view)
-├── login.html           → Login page
-├── admin.html            → Admin dashboard
+├── login.html          → Login page
+├── admin.html          → Admin dashboard
 ├── assets/
-│   ├── css/style.css     → All styles
-│   └── images/           → (empty — no images used)
+│   ├── css/
+│   │   └── style.css   → All website styles
+│   └── images/         → Images and icons used in the website
 └── README.md
 ```
 
-## How to run
+## Pages
 
-No build step or server required.
+* **Homepage (`index.html`)** — Introduces personal information, skills, projects, and contact information.
+* **Login (`login.html`)** — Login interface for accessing the admin area.
+* **Admin Dashboard (`admin.html`)** — Interface for managing portfolio information, projects, and skills.
 
-1. Download / clone the `portfolio` folder.
-2. Open `index.html` directly in any browser (double-click, or right-click → Open with Browser).
-3. Navigate to the Login page and Admin Dashboard using the links in the navbar / footer.
+## How to Run
 
-## Before submitting
+No build step or server is required.
 
-Replace these placeholders with real information:
+1. Open the `portfolio` folder.
+2. Open `index.html` directly in a web browser.
+3. Use the navigation links to access the Login page and Admin Dashboard.
 
-- `[YOUR NAME]` — your name (appears in navbar, hero, footer, login, admin)
-- `[YOUR_EMAIL]` — your email (Contact section, login "mailto" link)
-- `[GITHUB_URL]` — your GitHub profile / repo links
-- `[LINKEDIN_URL]` — your LinkedIn profile
+The website can also be previewed using **VS Code Live Server / Go Live**.
 
-## Technical checklist
+## Technical Checklist
 
-- [x] HTML5 semantic elements (`header`, `nav`, `main`, `section`, `article`, `footer`)
-- [x] CSS Variables in `:root` (colors, font-size, border-radius)
-- [x] Flexbox — navbar, admin toolbar, hero actions, tag lists
-- [x] CSS Grid — Projects grid (homepage), Admin Dashboard layout, stat cards
-- [x] Responsive: Desktop (≥1024px), Tablet (768–1023px), Mobile (<768px)
-- [x] No Bootstrap / Tailwind / React / Vue / Angular / jQuery
-- [x] No JavaScript (mobile menu uses a CSS-only checkbox technique)
+* [x] HTML5 semantic elements (`header`, `nav`, `main`, `section`, `article`, `footer`)
+* [x] CSS Variables in `:root` (colors, font-size, border-radius)
+* [x] Flexbox — navbar, toolbar, hero actions, and tag lists
+* [x] CSS Grid — projects section and Admin Dashboard layout
+* [x] Responsive design for Desktop, Tablet, and Mobile
+* [x] No Bootstrap, Tailwind, React, Vue, Angular, or other frameworks
+* [x] No JavaScript libraries
+* [x] Mobile navigation implemented using CSS only
+
+## Technologies
+
+* HTML5
+* CSS3
+* CSS Flexbox
+* CSS Grid
+* CSS Variables
+* Responsive Web Design
+
+## Assignment
+
+**Course:** Web Programming
+**Assignment:** E-learning 01 – Personal Portfolio Website
+
+The project focuses on building a complete personal portfolio interface using HTML5 and CSS3 while applying CSS Variables, Flexbox, CSS Grid, and Responsive Design techniques.
