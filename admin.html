@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+
+  <!-- Google Fonts: serif for headings, sans-serif for body  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="admin-nav-toggle" class="admin-nav-toggle-input">
+
+  <!--  ADMIN LAYOUT  -->
+  <div class="admin">
+
+    <!-- Sidebar -->
+    <aside class="admin__sidebar">
+      <a href="index.html" class="navbar__logo">
+      <img src="assets/images/logo.png" alt="" class="navbar__logo-icon">
+      <span class="navbar__logo-text">HgP</span>
+      <img src="assets/images/logo.png" alt="" class="navbar__logo-icon">
+      </a>
+
+      <nav class="admin__nav" aria-label="Admin navigation">
+        <a href="#dashboard" class="admin__nav-link admin__nav-link--active">Dashboard</a>
+        <a href="#profile" class="admin__nav-link">Profile</a>
+        <a href="#skills" class="admin__nav-link">Skills</a>
+        <a href="#projects" class="admin__nav-link">Projects</a>
+        <a href="#settings" class="admin__nav-link">Settings</a>
+      </nav>
+
+      <a href="login.html" class="admin__logout">Logout</a>
+    </aside>
+
+    <!-- Main content -->
+    <main class="admin__main">
+
+      <!-- Toolbar (Flexbox) -->
+      <div class="admin__toolbar">
+        <div class="admin__toolbar-left">
+          <label for="admin-nav-toggle" class="admin__nav-toggle-label" aria-label="Toggle menu">
+            <img src="assets/images/menu.png" alt="" class="nav-toggle-icon">
+          </label>
+          <div>
+            <p class="eyebrow">Hello! <br>
+              Phan Thị Thu Hương</p>
+            <h1 class="admin__page-title">Portfolio Admin</h1>
+          </div>
+        </div>
+        <button type="button" class="btn btn--primary">+ Add Project</button>
+      </div>
+
+      <!-- Statistic cards -->
+      <section class="admin__stats" id="dashboard" aria-label="Portfolio statistics">
+        <article class="stat-card">
+          <p class="stat-card__value">04</p>
+          <p class="stat-card__label">Projects</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value">05</p>
+          <p class="stat-card__label">Skill Groups</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value">01</p>
+          <p class="stat-card__label">Featured Project</p>
+        </article>
+      </section>
+
+      <!-- Personal info — editable profile card -->
+      <section class="admin__panel" id="profile">
+        <div class="admin__panel-header">
+          <h2 class="admin__panel-title">Profile Information</h2>
+          <button type="button" class="btn-text">Edit</button>
+        </div>
+
+        <div class="admin__profile-form">
+          <div class="form-field">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" value="Phan Thị Thu Hương">
+          </div>
+
+          <div class="form-field">
+            <label for="target-role">Target Role</label>
+            <input type="text" id="target-role" name="target-role" value="IT Intern / Automation Tester">
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="short-goal">Short-term Goals</label>
+            <textarea id="short-goal" name="short-goal" rows="4">Seeking an internship in Automation Testing or Software Development to apply my knowledge and contribute to real-world projects.</textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill groups -->
+      <section class="admin__panel" id="skills">
+        <div class="admin__panel-header">
+          <h2 class="admin__panel-title">Skill Groups</h2>
+          <button type="button" class="btn-text">+ Add Group</button>
+        </div>
+
+        <div class="admin__table">
+          <div class="admin__table-row admin__table-row--skills admin__table-row--head">
+            <span>Group</span>
+            <span>Skills</span>
+            <span>Actions</span>
+          </div>
+
+          <div class="admin__table-row admin__table-row--skills">
+            <span>Programming</span>
+            <span>C · C++ · C# · Python</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+
+          <div class="admin__table-row admin__table-row--skills">
+            <span>Web</span>
+            <span>HTML5 · CSS3</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+
+          <div class="admin__table-row admin__table-row--skills">
+            <span>Testing</span>
+            <span>Web Testing · API Testing · Test Cases · Automation Testing</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+
+          <div class="admin__table-row admin__table-row--skills">
+            <span>Tools</span>
+            <span>Git · GitHub · Docker · Postman · SonarQube</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project management -->
+      <section class="admin__panel" id="projects">
+        <div class="admin__panel-header">
+          <h2 class="admin__panel-title">Project Management</h2>
+        </div>
+
+        <div class="admin__table">
+          <div class="admin__table-row admin__table-row--head">
+            <span>Project</span>
+            <span>Technology</span>
+            <span>Status</span>
+            <span>Actions</span>
+          </div>
+
+          <div class="admin__table-row">
+            <span>Personal Portfolio Website</span>
+            <span>HTML5, CSS3</span>
+            <span class="status-badge status-badge--featured">Featured</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+
+          <div class="admin__table-row">
+            <span>Data Compression — C++</span>
+            <span>C++</span>
+            <span class="status-badge">Published</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+
+          <div class="admin__table-row">
+            <span>Multi-File Downloader</span>
+            <span>Python</span>
+            <span class="status-badge">Published</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+
+          <div class="admin__table-row">
+            <span>Spendy</span>
+            <span>Laravel, Next.js</span>
+            <span class="status-badge">Published</span>
+            <span class="admin__row-actions">
+              <button type="button" class="btn-text">Edit</button>
+              <button type="button" class="btn-text btn-text--danger">Delete</button>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Settings -->
+      <section class="admin__panel" id="settings">
+        <div class="admin__panel-header">
+          <h2 class="admin__panel-title">Account Settings</h2>
+        </div>
+
+        <div class="admin__profile-form">
+          <div class="form-field">
+            <label for="account-email">Email Login</label>
+            <input type="text" id="account-email" name="account-email" value="Student@gmail.com">
+          </div>
+
+          <div class="form-field">
+            <label for="new-password">Change Password</label>
+            <input type="password" id="new-password" name="new-password" placeholder="••••••••">
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

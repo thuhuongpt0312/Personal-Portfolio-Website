@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <meta name="description" content="Personal portfolio of an Information Technology student focused on programming, web development and software testing.">
+
+  <!-- Google Fonts: serif for headings, sans-serif for body  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!--  NAVBAR (Flexbox) -->
+  <header class="navbar">
+    <!-- Mobile nav toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+      <img src="assets/images/logo.png" alt="" class="navbar__logo-icon">
+      <span class="navbar__logo-text">HgP</span>
+      <img src="assets/images/logo.png" alt="" class="navbar__logo-icon">
+      </a>
+
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <a href="#home" class="navbar__link navbar__link--active">Home</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#projects" class="navbar__link">Projects</a>
+        <a href="#career" class="navbar__link navbar__link--career">Career</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+        <a href="login.html" class="navbar__login">Login</a>
+      </nav>
+      
+    
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <img src="assets/images/menu.png" alt="" class="nav-toggle-icon">
+      </label>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="navbar__mobile-nav" aria-label="Mobile navigation">
+      <a href="#home" class="navbar__link--active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#career">Career</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+
+        <div class="hero__main">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero__name">Phan Thị Thu Hương</h1>
+          <p class="hero__role">Information Technology Student</p>
+          <p class="hero__subtitle">Exploring Automation Testing &amp; Software Development</p>
+          <p class="hero__tagline">Building with code. Thinking with algorithms. Testing with purpose.</p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="https://github.com/thuhuongpt0312" class="btn btn--ghost" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+
+          <ul class="hero__meta">
+            <li>Vietnam</li>
+            <li>IT Student</li>
+            <li>2026</li>
+          </ul>
+        </div>
+
+        <aside class="hero__side">
+          <figure class="hero__portrait">
+            <img src="assets/images/avatar.jpg" alt="Portrait of Phan Thị Thu Hương" class="hero__portrait-img">
+            <figcaption class="hero__portrait-caption">
+              <p class="hero__portrait-location">
+                <svg class="hero__portrait-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M9 12h.01M15 12h.01M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Thạnh Mỹ Tây, HCM
+              </p>
+              <p class="hero__portrait-school">
+                <svg class="hero__portrait-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M12 3 1.5 8 12 13l10.5-5L12 3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                  <path d="M5 10.5V16c0 1 3 3 7 3s7-2 7-3v-5.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.5 8v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+                UTH · 2024–2027
+              </p>
+            </figcaption>
+          </figure>
+
+          <p class="hero__intro">
+            I'm an Information Technology student building my foundation in
+            programming, algorithms, web development and software testing.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+    <!--  ABOUT  -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-label">01 — About</p>
+
+        <div class="about__grid">
+          <h2 class="section-title">Building with Code.<br> Testing with Purpose.</h2>
+          <div class="about__text">
+            <p>
+              I'm an Information Technology student with hands-on practice in programming, object-oriented design, algorithms and data structures. 
+              Alongside development, I've been developing a growing interest in software testing — from designing test cases to validating APIs.
+            <p>
+              I'm currently shaping my direction toward
+              <strong>Automation Testing</strong> or <strong>Software Development</strong>,
+              combining a developer's understanding of how systems are built
+              with a tester's attention to how they can fail.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--surface" id="skills">
+      <div class="container">
+        <p class="section-label">02 — Skills</p>
+        <h2 class="section-title">What I work with</h2>
+
+        <div class="skills__list">
+
+          <article class="skills__group">
+            <h3 class="skills__group-title"><span>01</span> Programming</h3>
+            <p class="skills__group-items">C · C++ · C# · Python</p>
+          </article>
+
+          <article class="skills__group">
+            <h3 class="skills__group-title"><span>02</span> Web</h3>
+            <p class="skills__group-items">HTML5 · CSS3</p>
+          </article>
+
+          <article class="skills__group">
+            <h3 class="skills__group-title"><span>03</span> Core</h3>
+            <p class="skills__group-items">OOP · Algorithms · Data Structures</p>
+          </article>
+
+          <article class="skills__group">
+            <h3 class="skills__group-title"><span>04</span> Testing</h3>
+            <p class="skills__group-items">Web Testing · API Testing · Test Cases · Automation Testing</p>
+          </article>
+
+          <article class="skills__group">
+            <h3 class="skills__group-title"><span>05</span> Tools</h3>
+            <p class="skills__group-items">Git · GitHub · Docker · Postman · SonarQube</p>
+          </article>
+
+          <article class="skills__group">
+            <h3 class="skills__group-title"><span>06</span> Soft Skills</h3>
+            <p class="skills__group-items">Communication · Teamwork · Problem Solving</p>
+          </article>
+
+          <article class="skills__group">
+            <h3 class="skills__group-title"><span>07</span> Office Skills</h3>
+            <p class="skills__group-items">Microsoft Office · Google Workspace</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  PROJECTS  -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label">03 — Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects__grid">
+
+          <!-- Project 01 — Featured -->
+          <article class="project-card project-card--featured">
+            <p class="project-card__featured-tag">Featured Project</p>
+            <p class="project-card__index">01</p>
+            <h3 class="project-card__title">Personal Portfolio Website</h3>
+            <p class="project-card__desc">
+              A personal portfolio website built with pure HTML5 and CSS3 to
+              present my background, skills, career direction and projects.
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">CSS Variables</li>
+              <li class="tag">Flexbox</li>
+              <li class="tag">CSS Grid</li>
+              <li class="tag">Responsive Design</li>
+            </ul>
+            <a href="https://github.com/thuhuongpt0312/Personal-Portfolio-Website" class="project-card__link" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card">
+            <p class="project-card__index">02</p>
+            <h3 class="project-card__title">Data Compression — C++</h3>
+            <p class="project-card__desc">
+              A coursework project on data compression in C++, focused on
+              understanding, implementing and presenting different compression
+              algorithms.
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">C++</li>
+              <li class="tag">OOP</li>
+              <li class="tag">Algorithms</li>
+              <li class="tag">Data Structures</li>
+            </ul>
+            <a href="https://github.com/thuhuongpt0312/DATA_COMPRESSION" class="project-card__link" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card">
+            <p class="project-card__index">03</p>
+            <h3 class="project-card__title">Multi-File Downloader</h3>
+            <p class="project-card__desc">
+              A Client–Server project in Python that lets a user download files
+              through a data transfer system between client and server.
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">Python</li>
+              <li class="tag">Client–Server</li>
+              <li class="tag">Networking</li>
+              <li class="tag">File Transfer</li>
+            </ul>
+            <a href="https://github.com/BobananaGH/multi-file-downloader" class="project-card__link" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card">
+            <p class="project-card__index">04</p>
+            <h3 class="project-card__title">Spendy</h3>
+            <p class="project-card__subtitle">Personal Finance Management Platform</p>
+            <p class="project-card__desc">
+              A personal finance management application with a Laravel REST API
+              and Next.js front end, covering a financial dashboard, wallets,
+              transactions, budgets and role-based administration.
+              <strong>My role focused on software testing and quality assurance.</strong>
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">Laravel REST API</li>
+              <li class="tag">TypeScript 5</li>
+              <li class="tag">Postman</li>
+              <li class="tag">Test Cases</li>
+              <li class="tag">SonarQube</li>
+              <li class="tag">Docker</li>
+            </ul>
+            <a href="https://github.com/nqkha06/kcpn-2026" class="project-card__link" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  CAREER  -->
+    <section class="section section--dark" id="career">
+      <div class="container career__grid">
+        <p class="section-label section-label--light">04 — Career</p>
+        <div>
+          <h2 class="section-title section-title--light">Where I'm heading</h2>
+          <p class="career__text">
+            I want to keep building my foundation in programming, algorithms
+            and web development, while combining it with software testing
+            knowledge — working toward a future in
+            <strong>Automation Testing</strong> or <strong>Software Development</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--  CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section-label">05 — Contact</p>
+        <h2 class="section-title">Let's connect</h2>
+
+        <div class="contact__list">
+          <a href="mailto:thuhuongpt0312@gmail.com" class="contact__item">
+            <span class="contact__icon">
+              <img src="assets/images/mail.png" alt="" class="contact__icon-img">
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">Email</span>
+              <span class="contact__value">thuhuongpt0312@gmail.com</span>
+            </span>
+          </a>
+          <a href="tel:0842122512" class="contact__item">
+            <span class="contact__icon">
+              <img src="assets/images/phone.png" alt="" class="contact__icon-img">
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">0842122512</span>
+            </span>
+          </a>
+          <a href="https://github.com/thuhuongpt0312" class="contact__item" target="_blank" rel="noopener">
+            <span class="contact__icon">
+              <img src="assets/images/github.png" alt="" class="contact__icon-img">
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">thuhuongpt0312</span>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/phan-th%E1%BB%8B-thu-h%C6%B0%C6%A1ng-b1714a387/?isSelfProfile=true" class="contact__item" target="_blank" rel="noopener">
+            <span class="contact__icon">
+              <img src="assets/images/linkedin.png" alt="" class="contact__icon-img">
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">Phan Thị Thu Hương</span>
+            </span>
+          </a>
+          <div class="contact__item contact__item--static">
+            <span class="contact__icon">
+              <img src="assets/images/location.png" alt="" class="contact__icon-img">
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">Location</span>
+              <span class="contact__value">Thạnh Mỹ Tây, HCM</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Phan Thị Thu Hương. Student Portfolio.</p>
+      <a href="login.html">Admin Login</a>
+    </div>
+  </footer>
+
+</body>
+</html>
